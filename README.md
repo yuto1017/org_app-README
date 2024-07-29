@@ -13,6 +13,7 @@
 
 - has_many :tasks
 - has_many :reports
+- has_many :chats
 
 ## tasks テーブル
 
