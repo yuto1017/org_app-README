@@ -13,7 +13,6 @@
 
 - has_many :tasks
 - has_many :reports
-- has_many :chats
 
 ## tasks テーブル
 
@@ -73,7 +72,7 @@
 | --------- | ---------- | ------------------------------ |
 | task      | references | null: false, foreign_key: true |
 | user      | references | null: false, foreign_key: true |
-| comment   | text       | null: false                    |
+| message   | text       | null: false                    |
 
 ### Association
 
