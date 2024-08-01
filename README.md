@@ -13,6 +13,7 @@
 
 - has_many :tasks
 - has_many :reports
+- has_many :sendmessages
 
 ## tasks テーブル
 
@@ -74,11 +75,24 @@
 | --------- | ---------- | ------------------------------ |
 | task      | references | null: false, foreign_key: true |
 | user      | references | null: false, foreign_key: true |
-| message   | text       | null: false                    |
 
 ### Association
 
 - belongs_to :task
+- belongs_to :user
+- has_many :sendmessages
+
+## sendmessages テーブル
+
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| chat      | references | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
+| content   | text       | null: false                    |
+
+### Association
+
+- belongs_to :chat
 - belongs_to :user
 
 
