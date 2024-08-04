@@ -25,8 +25,8 @@
 | description        | text       | null: false                                    |
 | start_date         | date       | null: false                                    |
 | completion_date    | date       | null: false                                    |
-| worker             | references | null: false                                    |
-| worker_nickname    | string     | null: false, foreign_key: { to_table: :users } |
+| assignee           | references | null: false                                    |
+| assignee_nickname  | string     | null: false, foreign_key: { to_table: :users } |
 | admin              | references | null: false                                    |
 | admin_nickname     | string     | null: false, foreign_key: { to_table: :users } |
 
@@ -95,6 +95,20 @@
 
 - belongs_to :chat
 - belongs_to :user
+
+## personaltasks テーブル
+
+| Column    | Type       | Options                        |
+| ----------| ---------- | ------------------------------ |
+| task      | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :task
+- has_one :reminder
+- has_many :reports
+- has_one :chat
 
 
 ## 今後実装したい機能
