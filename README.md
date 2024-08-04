@@ -1,7 +1,45 @@
+# アプリケーション名
+タスク管理アプリ  TAMT（タント）<br>
+&nbsp;&nbsp;※TAMTは&nbsp;&nbsp;&nbsp;&nbsp;Task Auxiliary Management Tool（タスク補助管理ツール）の各単語の頭文字をとった略称
+
+# アプリケーションの概要
+複数のツールを用いることなく、下記のメリットから効率的にタスク管理が行うことができる。<br>
+&nbsp;&nbsp;・タスクの可視化によってタスクの見落としがなくなる<br>
+&nbsp;&nbsp;・進捗状況の把握が可能で担当者と管理者間でタスクの情報共有<br>
+&nbsp;&nbsp;・単一ツールで一元管理することで複数のツールを必要としない
+
+# URL
+https://org-app-40428.onrender.com
+
+# テスト用アカウント
+
+
+# 利用方法
+
+
+# アプリケーションを作成した背景
+
+# 洗い出した要件
+
+#
+
+
+# 実装予定の機能
+- プロジェクト管理機能
+- タスクの検索機能
+- カレンダー表示機能
+
+# データベース設計
+
+
+
+# 画面遷移図
+
+
 
 # テーブル設計
 
-## users テーブル
+### users テーブル
 
 | Column             | Type    | Options                   |
 | ------------------ | ------- | ------------------------- |
@@ -15,8 +53,9 @@
 - has_many :tasks
 - has_many :reports
 - has_many :sendmessages
+- has_many :personaltasks
 
-## tasks テーブル
+### tasks テーブル
 
 | Column             | Type       | Options                                        |
 | -------------------| ---------- | ---------------------------------------------- |
@@ -38,8 +77,9 @@
 - has_one :reminder
 - has_many :reports
 - has_one :chat
+- has_many :personaltasks
 
-## reminders テーブル
+### reminders テーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -52,8 +92,9 @@
 ### Association
 
 - belongs_to :task
+- belongs_to :personaltask
 
-## reports テーブル
+### reports テーブル
 
 | Column              | Type       | Options                        |
 | --------------------| ---------- | ------------------------------ |
@@ -69,8 +110,9 @@
 
 - belongs_to :task
 - belongs_to :user
+- belongs_to :personaltask
 
-## chats テーブル
+### chats テーブル
 
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
@@ -82,8 +124,9 @@
 - belongs_to :task
 - belongs_to :user
 - has_many :sendmessages
+- has_many :personaltasks
 
-## sendmessages テーブル
+### sendmessages テーブル
 
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
@@ -96,7 +139,7 @@
 - belongs_to :chat
 - belongs_to :user
 
-## personaltasks テーブル
+### personaltasks テーブル
 
 | Column    | Type       | Options                        |
 | ----------| ---------- | ------------------------------ |
@@ -111,7 +154,24 @@
 - has_one :chat
 
 
-## 今後実装したい機能
-- プロジェクト管理機能
-- タスクの検索機能
-- カレンダー表示機能
+## 開発環境
+
+| カテゴリー                | 名称           | バージョン  |
+| -------------------------| -------------- | -----------|
+| プログラミング言語（※）   | Ruby           | 3.2.0     |
+| フレームワーク            | Ruby on Rails  | 7.0.8.4    |
+| データベース              | MySQL          | 5.7.44     |
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※一部の機能でJava Scriptを使用
+
+
+## ローカルでの動作方法
+
+以下のコマンドを順に実行。<br>
+% git clone [https://github.com/yuto1017/org_app](https://github.com/yuto1017/org_app)<br>
+% cd org_app<br>
+% bundle install<br>
+% yarn install<br>
+
+## 工夫したポイント
+
