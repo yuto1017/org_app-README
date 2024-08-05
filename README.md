@@ -92,7 +92,6 @@ https://org-app-40428.onrender.com
 ### Association
 
 - belongs_to :task
-- belongs_to :personaltask
 
 ### reports テーブル
 
@@ -110,7 +109,6 @@ https://org-app-40428.onrender.com
 
 - belongs_to :task
 - belongs_to :user
-- belongs_to :personaltask
 
 ### chats テーブル
 
@@ -124,7 +122,6 @@ https://org-app-40428.onrender.com
 - belongs_to :task
 - belongs_to :user
 - has_many :sendmessages
-- has_many :personaltasks
 
 ### sendmessages テーブル
 
@@ -149,9 +146,6 @@ https://org-app-40428.onrender.com
 
 - belongs_to :user
 - belongs_to :task
-- has_one :reminder
-- has_many :reports
-- has_one :chat
 
 
 ## 開発環境
