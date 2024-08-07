@@ -71,8 +71,7 @@ https://org-app-40428.onrender.com
 [![Image from Gyazo](https://i.gyazo.com/aba96200faed6d07c54c53c29e9d9555.png)](https://gyazo.com/aba96200faed6d07c54c53c29e9d9555)
 
 # 画面遷移図
-
-
+[![Image from Gyazo](https://i.gyazo.com/31b5ad121490fb1474bed703c245dcc7.png)](https://gyazo.com/31b5ad121490fb1474bed703c245dcc7)
 
 # テーブル設計
 
