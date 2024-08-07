@@ -68,8 +68,7 @@ https://org-app-40428.onrender.com
 - カレンダー表示機能
 
 # データベース設計
-
-
+[![Image from Gyazo](https://i.gyazo.com/aba96200faed6d07c54c53c29e9d9555.png)](https://gyazo.com/aba96200faed6d07c54c53c29e9d9555)
 
 # 画面遷移図
 
@@ -90,6 +89,7 @@ https://org-app-40428.onrender.com
 
 - has_many :tasks
 - has_many :reports
+- has_many :chats
 - has_many :sendmessages
 - has_many :personaltasks
 
