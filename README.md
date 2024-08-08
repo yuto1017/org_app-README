@@ -67,6 +67,7 @@ https://org-app-40428.onrender.com
 - リマインダー機能<br>
 - 進捗報告機能<br>
 - チャット機能<br>
+&nbsp;&nbsp;※後日詳細を記載する予定
 
 # 実装予定の機能
 - プロジェクト管理機能
@@ -209,3 +210,4 @@ https://org-app-40428.onrender.com
 % yarn install<br>
 
 # 工夫したポイント
+&nbsp;&nbsp;※※後日詳細を記載する予定
