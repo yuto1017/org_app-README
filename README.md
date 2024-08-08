@@ -210,4 +210,4 @@ https://org-app-40428.onrender.com
 % yarn install<br>
 
 # 工夫したポイント
-&nbsp;&nbsp;※※後日詳細を記載する予定
+&nbsp;&nbsp;※後日詳細を記載する予定
