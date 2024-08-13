@@ -215,7 +215,7 @@ https://org-app-40428.onrender.com
 | フレームワーク            | Ruby on Rails  | 7.0.8.4    |
 | データベース              | MySQL          | 5.7.44     |
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※一部の機能でJava Scriptを使用
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;※一部の機能でJavaScriptを使用
 
 # ローカルでの動作方法
 
